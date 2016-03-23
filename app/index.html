@@ -96,9 +96,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <p class="subhead">Your recent transactions</p>
           <firebase-collection
-            limit-to-first="10"
+            limit-to-last="8"
             location="https://instamoney.firebaseio.com/accounts/AU58447444567/transactions"
-            data="{{transactions}}" orderByKey></firebase-collection>
+            data="{{transactions}}"></firebase-collection>
           <template is="dom-repeat" items="[[transactions]]" as="transaction">
             <h4>FROM: [[transaction.from]]</h4>
             <span>AMOUNT: [[transaction.amount]]</span>

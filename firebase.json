@@ -1,5 +1,5 @@
 {
-  "firebase": "hannes",
+  "firebase": "instamoney",
   "public": "dist",
   "ignore": [
     "firebase.json",
